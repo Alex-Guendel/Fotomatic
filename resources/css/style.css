@@ -47,10 +47,17 @@ header .content {
   display: flex;
   align-items: center;
   padding: 1.875rem;
+  height: 85px;
 }
 
 header .logo {
   flex: 1;
+  color: red;
+  border: 1px red solid;
+  padding-left: 30px;
+  color: #4a4a4a;
+  font-size: 24px;
+  font-family: Roboto-Mono-Regular;
 }
 
 header nav ul {
