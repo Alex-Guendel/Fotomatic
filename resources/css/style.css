@@ -26,6 +26,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -39,8 +40,11 @@ html {
 header {
   position: fixed;
   width: 100%;
+  border-top: solid red 2px;
+  margin-top: -10px;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 1;
 }
 
 header .content {
@@ -53,7 +57,7 @@ header .content {
 header .logo {
   flex: 1;
   color: red;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   padding-left: 30px;
   color: #4a4a4a;
   font-size: 24px;
@@ -62,6 +66,7 @@ header .logo {
 
 header nav ul {
   display: flex;
+  list-style: none
 }
 
 nav li {
@@ -78,6 +83,8 @@ nav a {
 header .icon {
   width: 1rem;
   padding-left: .75rem;
+  position: relative;
+  top: 3px;
 }
 
 header .mobile {
@@ -119,11 +126,16 @@ header .mobile {
 
 /* Sign Up Section */
 
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url("/resources/images/banner-landingpage.jpg");
+  object-fit: cover;
+  position: relative;
+  top: 65px;
 }
 
 #sign-up-cta {
@@ -131,6 +143,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  position:relative;
+  top:20%;
+  left:10%;
 }
 
 #sign-up-cta .content {
@@ -228,6 +243,7 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  width: 33%;
 }
 
 .feature .image-container {
@@ -235,6 +251,7 @@ header .mobile {
   height: 65%;
   margin: 0 auto;
 }
+
 
 .feature h2 {
   padding-bottom: .5rem;
@@ -301,8 +318,9 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  max-width: 100%;
+  display: flex;
   padding: 0 1%;
+  max-width:100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -327,7 +345,9 @@ header .mobile {
   }
 
   #filters-section .images-container {
-    padding: 0;
+    display: flex;
+    padding: 0 1%;
+    max-width:100%;
   }
 
   #filters-section .extra {
